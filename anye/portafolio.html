@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Trainee Web UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafb;
+            color: #5a5a5a;
+        }
+
+        .bg-pastel-pink { background: linear-gradient(135deg, #ffe9f3 0%, #ffffff 100%); }
+        .bg-pastel-purple { background-color: #f2def5; }
+        .text-accent { color: #d81b60; }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+
+        .navbar-nav .nav-link {
+            color: #5a5a5a; 
+            transition: color 0.3s ease; 
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d81b60 !important; 
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #d81b60 !important;
+        }
+
+        .navbar-brand:hover {
+            color: #d81b60;
+            transition: 0.3s;
+        }
+
+        .hero-section {
+            padding: 100px 0 60px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background-color: #fffafb; 
+            box-shadow: 0 5px 20px rgba(216, 27, 96, 0.15); 
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(216, 27, 96, 0.3);
+        }
+
+        .btn-pastel {
+            background-color: #fce4ec;
+            color: #d81b60;
+            border: 2px solid #f8bbd0;
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 10px 25px;
+        }
+
+        .btn-pastel:hover {
+            background-color: #d81b60;
+            color: white;
+        }
+
+        .footer {
+            background-color: #ffe9f3;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .form-control:focus {
+            border-color: #f8bbd0;
+            box-shadow: 0 0 0 0.25rem rgba(216, 27, 96, 0.1);
+            background-color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <section class="container">
+            <a class="navbar-brand fw-bold text-accent" href="#">ANGELIQUE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-content="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+    <section class="hero-section bg-pastel-pink">
+        <article class="container">
+            <article class="row align-items-center">
+                <article class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="WhatsApp Image 2026-03-20 at 1.09.32 PM.jpeg" class="rounded-circle profile-img" alt="Angelique">
+                </article>
+                <article class="col-md-7">
+                    <h1 class="display-4 fw-bold text-accent">¡Hola! Soy Angelique</h1>
+                    <p class="lead fw-light">Trainee en <strong>Globant</strong> | QC & Web UI Student</p>
+                    <p>Apasionada por el diseño de interfaces y el control de calidad. Actualmente me formo en el <strong>CESDE</strong> y estudio Ingeniería de Sistemas en la <strong>UNAD</strong>. Mi enfoque es crear experiencias digitales impecables y totalmente responsive.</p>
+                    <article class="mt-4">
+                        <a href="https://github.com/anyetk" class="btn btn-pastel" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Ver mi GitHub</a>
+                    </article>
+            </article>
+        </article>
+    </section>
+
+<section id="formacion" class="py-5">
+    <article class="container">
+        <h2 class="text-center mb-5 text-accent fw-bold">Mi Formación</h2>
+        <article class="row g-4">
+            
+            <article class="col-md-4">
+                <article class="card h-100 p-4 text-center card-formacion">
+                    <i class="bi bi-briefcase-fill display-4 text-accent mb-3"></i>
+                    <h4 class="fw-bold">Globant</h4>
+                    <p class="small text-muted">Trainee Web UI | QC</p>
+                    <p>Especializándome en QC y pruebas responsive dentro de un entorno profesional. Adquiriendo conocimientos sobre desarrollo Web UI full stack.</p>
+                </article>
+            </article>
+
+            <article class="col-md-4">
+                <article class="card h-100 p-4 text-center card-formacion">
+                    <i class="bi bi-book display-4 text-accent mb-3"></i>
+                    <h4 class="fw-bold">CESDE</h4>
+                    <p class="small text-muted">Técnico laboral como auxiliar en sistemas</p>
+                    <p>Donde actualmente potencio mis habilidades creativas y técnicas en diseño de interfaces y experiencia de usuario.</p>
+                </article>
+            </article>
+
+            <article class="col-md-4">
+                <article class="card h-100 p-4 text-center card-formacion">
+                    <i class="bi bi-mortarboard display-4 text-accent mb-3"></i>
+                    <h4 class="fw-bold">UNAD</h4>
+                    <p class="small text-muted">Ingeniería de Sistemas</p>
+                    <p>Formación académica profesional para entender la tecnología desde su base estructural y lógica de sistemas.</p>
+                </article>
+            </article>
+
+        </article>
+    </article>
+</section>
+
+<section id="proyectos" class="py-5 bg-white">
+    <article class="container">
+        <h2 class="text-center mb-5 text-accent fw-bold">Proyectos Recientes</h2>
+        <article class="row g-4 justify-content-center">
+            
+            <article class="col-md-5">
+                <article class="card h-100 shadow-sm border-0" style="border-radius: 20px; border-bottom: 4px solid #f8bbd0;">
+                    <article class="card-body p-4">
+                        <article class="mb-3">
+                            <span class="badge rounded-pill px-3 py-2" style="background-color: #efd6f3; color: #7b1fa2;">
+                                <i class="bi bi-people-fill me-1"></i> Proyecto Grupal
+                            </span>
+                        </article>
+                        <h4 class="card-title text-accent fw-bold">F1 & MotoGP Fansite</h4>
+                        <p class="card-text text-muted">
+                            Desarrollamos en equipo una plataforma dedicada a los apasionados de las carreras sport.
+                        </p>
+                        <a href="https://karol2324.github.io/CARRERAS-SPORT-2025/" target="_blank" class="btn btn-sm btn-pastel mt-2">
+                            Ver Repositorio Grupal <i class="bi bi-github ms-1"></i>
+                        </a>
+                    </article>
+                </article>
+            </article>
+
+            <article class="col-md-5">
+                <article class="card h-100 shadow-sm border-0" style="border-radius: 20px;">
+                    <article class="card-body p-4">
+                        <article class="mb-3">
+                            <span class="badge rounded-pill px-3 py-2" style="background-color: #e1f5fe; color: #0288d1;">
+                                <i class="bi bi-mortarboard-fill me-1"></i> Académico UNAD
+                            </span>
+                        </article>
+                        <h4 class="card-title text-accent fw-bold">Salud Mental App</h4>
+                        <p class="card-text text-muted">
+                            Página diseñada bajo la técnica <strong>CDIO</strong>. Centraliza información sobre síntomas y consejos de bienestar, enfocándose en una experiencia de usuario empática.
+                        </p>
+                    </article>
+                </article>
+            </article>
+
+    </article>
+        
+        <article class="text-center mt-5">
+            <p class="small text-muted mb-3">Puedes ver más de mi trabajo personal aquí:</p>
+            <a href="https://github.com/anyetk" target="_blank" class="btn btn-outline-secondary rounded-pill px-4">
+                Mi GitHub Personal <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </article>
+    </article>
+</section>
+
+<section id="articulos" class="py-5 bg-pastel-pink">
+    <article class="container text-center">
+        <h2 class="mb-5 text-accent fw-bold">Mis Artículos</h2>
+        
+        <article id="carouselArticulos" class="carousel slide shadow-sm bg-white p-4 p-md-5" data-bs-ride="carousel" style="border-radius: 30px;">
+            <article class="carousel-inner">
+                
+                <article class="carousel-item active">
+                    <article class="px-md-5">
+                        <i class="bi bi-heart-pulse display-4 text-accent mb-3"></i>
+                        <h4 class="fw-bold">Mente y Microchips: Cómo la tecnología puede ser tu mejor aliada emocional</h4>
+                        <p class="text-muted mx-auto mb-4" style="max-width: 700px;">
+                        En la era de la hiperconectividad, solemos culpar a las pantallas de nuestro estrés y ansiedad. Sin embargo, la tecnología no es el enemigo; es un espejo y, a veces, un salvavidas. Si aprendemos a usarla con intención, las herramientas digitales pueden ayudarnos a descifrar el complejo mapa de nuestra mente.
+                        </p>
+                        <a href="URL_TU_ARTICULO_1" target="_blank" rel="noopener noreferrer" class="btn btn-pastel">
+                            Leer Artículo <i class="bi bi-arrow-up-right-circle ms-1"></i>
+                        </a>
+                    </article>
+                </article>
+
+                <article class="carousel-item">
+                    <article class="px-md-5">
+                        <i class="bi bi-phone-vibrate display-4 text-accent mb-3"></i>
+                        <h4 class="fw-bold">Pruebas Responsive: ¿Por qué tu web debe ser un "camaleón" digital?</h4>
+                        <p class="text-muted mx-auto mb-4" style="max-width: 700px;">
+                        Imagina que invitas a alguien a cenar, pero la puerta de tu casa es tan pequeña que tu invitado no puede entrar. Eso es exactamente lo que siente un usuario cuando intenta navegar en una web que no está optimizada para móviles. En un mundo donde el 60% del tráfico web global proviene de dispositivos móviles, las pruebas responsive no son un lujo: son el cimiento de tu presencia online.
+                        </p>
+                        <a href="URL_TU_ARTICULO_2" target="_blank" rel="noopener noreferrer" class="btn btn-pastel">
+                            Leer Artículo <i class="bi bi-arrow-up-right-circle ms-1"></i>
+                        </a>
+                    </article>
+                </article>
+                                <article class="carousel-item">
+                    <article class="px-md-5">
+                        <i class="bi bi-eye text-accent display-4 mb-3"></i>
+                        <h4 class="fw-bold">La Realidad Editada: Cómo las Redes Sociales están Transformando el Mundo que Vemos</h4>
+                        <p class="text-muted mx-auto mb-4" style="max-width: 700px;">
+                            Hubo un tiempo en que la "realidad" era lo que sucedía justo frente a nuestros ojos. Hoy, para miles de millones de personas, la realidad es lo que aparece en una pantalla de cinco pulgadas. Las redes sociales han dejado de ser simples herramientas de comunicación para convertirse en los lentes a través de los cuales percibimos, interpretamos y reaccionamos ante el mundo.
+
+                            Esta transformación no es superficial; está reconfigurando nuestra psicología, nuestra sociedad y nuestra noción de la verdad.
+                        </p>
+                        <a href="URL_TU_ARTICULO_3" target="_blank" rel="noopener noreferrer" class="btn btn-pastel">
+                            Leer Artículo <i class="bi bi-arrow-up-right-circle ms-1"></i>
+                        </a>
+                    </article>
+                </article>
+            </article>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticulos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon p-3 bg-accent rounded-circle" aria-hidden="true" style="background-color: #f8bbd0;"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselArticulos" data-bs-slide="next">
+                <span class="carousel-control-next-icon p-3 bg-accent rounded-circle" aria-hidden="true" style="background-color: #f8bbd0;"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </article>
+    </article>
+</section>
+
+    <section id="testimonios" class="py-5">
+        <article class="container">
+            <h2 class="text-center mb-5 text-accent">Testimonios</h2>
+            <article class="row g-4">
+                <article class="col-md-6">
+                    <article class="card p-4 border-start border-accent border-4">
+                        <p class="fst-italic text-muted">"Es muy buena haciendo pruebas responsive, tiene gran ojo para el detalle."</p>
+                        <h6 class="mb-0">- Lilibeth Ospina</h6>
+                    </article>
+                </article>
+                <article class="col-md-6">
+                    <article class="card p-4 border-start border-accent border-4">
+                        <p class="fst-italic text-muted">"Excelente capacidad de análisis y trabajo en equipo en el desarrollo Web UI."</p>
+                        <h6 class="mb-0">- Sebastian Hortua</h6>
+                    </article>
+                </article>
+                <article class="col-md-6">
+                    <article class="card p-4 border-start border-accent border-4">
+                        <p class="fst-italic text-muted">"Demuestra una disciplina excepcional. Su capacidad para aplicar conocimientos teóricos de ingeniería en proyectos prácticos, como su enfoque en la metodología CDIO, la destaca como una futura ingeniera integral y comprometida con la calidad.."</p>
+                        <h6 class="mb-0">- Luisa Horta</h6>
+                    </article>
+                </article>
+            </article>
+        </article>
+    </section>
+
+    <section id="contacto" class="py-5 bg-white">
+        <article class="container">
+            <article class="row justify-content-center">
+                <article class="col-lg-8">
+                    <article class="card p-4 p-md-5 shadow-sm border-0" style="border-radius: 30px; background-color: #fff5f8;">
+                        <h2 class="text-center mb-4 text-accent fw-bold">¡Hablemos!</h2>
+                        <p class="text-center mb-5 text-muted">¿Tienes un proyecto en mente o quieres charlar sobre QC y Web UI? ¡Escríbeme!</p>
+                        
+                        <form>
+                            <article class="row g-3">
+                                <article class="col-md-6">
+                                    <label class="form-label small fw-bold text-secondary">Nombre</label>
+                                    <input type="text" class="form-control border-0 shadow-sm p-3" placeholder="Tu nombre" style="border-radius: 15px;">
+                                </article>
+                                <article class="col-md-6">
+                                    <label class="form-label small fw-bold text-secondary">Correo Electrónico</label>
+                                    <input type="email" class="form-control border-0 shadow-sm p-3" placeholder="nombre@ejemplo.com" style="border-radius: 15px;">
+                                </article>
+                                <article class="col-12 mt-4">
+                                    <label class="form-label small fw-bold text-secondary">Mensaje</label>
+                                    <textarea class="form-control border-0 shadow-sm p-3" rows="4" placeholder="¿En qué puedo ayudarte?" style="border-radius: 15px;"></textarea>
+                                </article>
+                                <article class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-pastel btn-lg px-5 shadow-sm">
+                                        Enviar Mensaje <i class="bi bi-send-fill ms-2"></i>
+                                    </button>
+                                </article>
+                            </article>
+                        </form>
+                    </article>
+                </article>
+            </article>
+        </article>
+    </section>
+
+    <footer class="footer text-center">
+        <article class="container">
+            <p class="mb-2 fw-bold">Angelique Rangel | Trainee Web UI @ Globant</p>
+            <article class="fs-4 mb-3">
+                <a href="#" class="text-accent mx-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-accent mx-2"><i class="bi bi-envelope-heart"></i></a>
+            </article>
+            <p class="small text-muted">&copy; 2026 Portafolio Profesional.</p>
+        </article>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
